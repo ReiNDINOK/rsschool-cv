@@ -30,3 +30,14 @@ def create_phone_number(n):
         create_phone_number += str(n[i])
     return create_phone_number
 ```
+**_Education & Courses:_**
+- North Kazakhstan State University
+  
+  Faculty of Natural and Mathematical Sciences, 2018-2022
+  
+  Specialization: Mathematics-Computer Science, Bachelor's degree
+- RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+  
+**_Languages:_**
+- English - Intermediate
+- Russian - Native
