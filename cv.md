@@ -1,4 +1,3 @@
-# CV
 # Sergey Nenashev
 **_Contact information:_** 
                                    
