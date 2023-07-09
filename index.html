@@ -1,29 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>My CV</title>
   <link rel="stylesheet" href="style.css">
-<title>My CV</title>
 </head>
 <body>
-   <header>
-    <h1>Sergey Nenashev</h1>
-    <nav>
-      <ul>
-        <li><a href= id "cont">Contact information</a></li>
-      </ul>
-    </nav>
-  </header>
-<div class="section">
-    <h2 id = "cont">Contact information</h2>
-    <p><i><span class="sub-heading">Phone number:</span>+7 771 477 27 98</i></p>
-    <p><span class="sub-heading">Email:</span>sergei_nenashev2000@mail.ru</p>
+  <div class="container">
+    <header class="header">
+      <h1>Sergey Nenashev</h1>
+<nav class="nav">
+  <ul class="nav-list">
+    <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
+    <li class="nav-item"><a href="#Summary" class="nav-link">Summary</a></li>
+    <li class="nav-item"><a href="#Skills" class="nav-link">Skills</a></li>
+    <li class="nav-item"><a href="#Code" class="nav-link">Code</a></li>
+    <li class="nav-item"><a href="#Education" class="nav-link">Education & Courses</a></li>
+    <li class="nav-item"><a href="#Languages" class="nav-link">Languages</a></li>
+  </ul>
+</nav>
 </div>
- <footer>
-    <a href="https://github.com/ReiNDINOK">My GitHub</a>
-   <p>2023</p>
+    </header>
+<main class="main">
+<div class="section">
+    <h2 id="Contacts">Contacts</h2>
+    <p><span>Phone number:</span>+7 771 477 27 98</p>
+    <p><span>Email:</span>sergei_nenashev2000@mail.ru</p>
+</div>
+</div>
+<div class="section">
+    <h2 id="Summary">Summary</h2>
+</div>
+    <ul class="columns" data-columns="2">
+        <li><p>Having received an education in Mathematics-Computer Science, I wanted to study programming languages and the work of website layout designers in more detail. Learning website writing and layout skills is a good foundation for future progress.</p></li>
+	<li><img width="200px" src="https://avatars.githubusercontent.com/u/132361869?v=4"></li>
+    </ul>
+</div>
+
+<h2 id="Skills">Skills</h2>
+      <ul>
+        <li>Python Basics</li>
+        <li>MS Word</li>
+      </ul>
+<h2 id="Code">Code</h2>
+    <p>Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.</p>
+<pre><code>
+def create_phone_number(n):
+    if len(n) != 10:
+        return 'invalid input'
+    create_phone_number = '('
+    for i in range(3):
+        create_phone_number += str(n[i])
+    create_phone_number += ') '
+    for i in range(3, 6):
+        create_phone_number += str(n[i])
+    create_phone_number += '-'
+    for i in range(6, 10):
+        create_phone_number += str(n[i])
+    return create_phone_number</code></pre>
+</div>
+<h2 id="Education">Education & Courses</h2>
+<ul>
+        <li>North Kazakhstan State University
+Faculty of Natural and Mathematical Sciences, 2018-2022
+Specialization: Mathematics-Computer Science</li>
+        <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
+      </ul>
+  </div>
+<h2 id="Languages">Languages</h2>
+<ul>
+        <li>English - Intermediate</li>
+        <li>Russian - Native</li>
+      </ul>
+  </div>
+</main>
+<footer class="footer">
+<div>   
+<p>2023</p>
    <a href="https://github.com/ReiNDINOK">My GitHub</a>
-   <p><a href="https://rs.school/js-stage0/"><img src="https://rs.school/images/rs_school_js.svg" width="300" 
-   height="100" alt="RS Logo"></a></p>
-  </footer>
+</div>
+  
+<a href="https://rs.school/js-stage0/"><img src="https://rs.school/images/rs_school_js.svg" width="300" 
+   height="100" alt="RS Logo" class="logo"></a>
+</div>
+   </footer>
 </body>
 </html>
